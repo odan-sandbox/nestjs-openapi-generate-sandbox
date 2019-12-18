@@ -12,6 +12,7 @@
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/main",
+    "generate:openapi": "yarn ts-node src/openapi/generate.ts 2> spec.json",
     "lint": "eslint --ext .js,.ts --ignore-path .gitignore .",
     "test": "jest",
     "test:watch": "jest --watch",
