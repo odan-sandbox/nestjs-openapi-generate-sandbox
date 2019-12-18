@@ -7,7 +7,7 @@ async function bootstrap(): Promise<void> {
   const app = await NestFactory.create(AppModule);
 
   const options = new DocumentBuilder()
-    .setTitle('NestJS アドベントカレンダーサンプル')
+    .setTitle('アドベントカレンダーサンプル')
     .build();
   const document = SwaggerModule.createDocument(app, options);
   SwaggerModule.setup('api', app, document);
